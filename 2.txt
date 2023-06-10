@@ -1,2 +1,6 @@
 Its my second file
+<<<<<<< HEAD
 One more line from local
+=======
+One more line from remote.
+>>>>>>> aec74dff2ba2afe138e8709e66d139a47fc8c1f0
