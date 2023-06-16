@@ -14,6 +14,7 @@ jobs:
         run: | 
           pwd
           ls
+          sleep 10
       - name: Second step.
         run: echo "This info from temp files"
   second_job: 
