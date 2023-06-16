@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest  #Run on some os system
     steps:
       - name: first step
-        run: cat 1.txt 2.txt
+        run: ls
       - name: Second step.
         run: echo "This info from temp files"
         
