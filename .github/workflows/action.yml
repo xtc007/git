@@ -9,7 +9,9 @@ jobs:
     runs-on: ubuntu-latest  #Run on some os system
     steps:
       - name: first step
-        run: ls
+        run: | 
+          pwd
+          ls
       - name: Second step.
         run: echo "This info from temp files"
         
