@@ -1,0 +1,16 @@
+name: gitaction
+on: #contidion
+  push:
+    branches: main
+    
+    
+jobs:
+  first_job:     #Name of JOb.
+    runs-on: ubuntu-latest  #Run on some os system
+    steps:
+      - name: first step
+        run: cat 1.txt 2.txt
+      - name: Second step.
+        run: echo "This info from temp files"
+        
+    
