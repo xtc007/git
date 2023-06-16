@@ -22,6 +22,3 @@ jobs:
     steps:
       - name: Make ls command
         run: ls
-        
-        
-    
