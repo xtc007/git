@@ -16,5 +16,11 @@ jobs:
           ls
       - name: Second step.
         run: echo "This info from temp files"
+  second_job: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Make ls command
+        run: ls
+        
         
     
