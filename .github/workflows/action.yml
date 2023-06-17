@@ -1,6 +1,6 @@
 name: gitaction
-on: #contidion
-  push:
+on:
+   pull_request: 
     branches: main
     
     
