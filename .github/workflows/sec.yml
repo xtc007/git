@@ -16,10 +16,12 @@ jobs:
         run: echo Hello, msg
       - name: print os version
         run: hostnamectl
-      - name:Print local var       
-        run: echo "My name is: $name"
         env:
-          name: "New1"
+           name: "New1"
+      - name: Print local var       
+        run: echo "My name is:$name"
+
+      
       
       - name: apt update
         run: apt update        
