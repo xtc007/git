@@ -1,0 +1,26 @@
+name: secret work.
+on:
+  push:
+    branches: [ "main" ]
+env:
+     name: "Kolya"
+jobs:
+  stage1:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - uses: actions/checkout@v3
+      # Runs a single command using the runners shell
+      - name: Run a one-line script
+        run: echo Hello, msg
+      - name: print os version
+        run: hostnamectl
+      - name:Print local var       
+        run: echo "My name is: $name"
+        env:
+          name:New1
+      
+      - name: apt update
+        run: apt update        
+  
