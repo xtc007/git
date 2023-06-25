@@ -27,3 +27,15 @@ jobs:
         run: ls ${{ github.workspace }}
       - name: Run test.sh
         run: bash test.sh ${{ github.workspace }}
+  stage3:
+      needs: [ stage1,stage2]
+      runs-on: ubuntu-latest
+      env:
+        local_var: "Bada"
+      steps:
+      - name: Print Var name
+        run: echo "My name is $name"
+      - name: Print local var
+        run: echo "my last name is $local_var"
+        
+        
