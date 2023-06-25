@@ -16,10 +16,16 @@ jobs:
         run: echo Hello, msg
       - name: print os version
         run: hostnamectl
-        env:
-           name: "New1"
-      - name: Print local var       
-        run: echo "My name is:$name"
+      - name: Print sha of commit
+        run : echo ${{ github.sha }}
+  stage2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show all files from repo.
+        run: git ls-files
+      - name: run test.sh
+        run: bash test,sh
+          
 
       
       
