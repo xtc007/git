@@ -25,4 +25,4 @@ jobs:
       - name: Show files from repo
         run: ls ${{ github.workspace }}
       - name: Run test.sh
-        run: bash test.sh
+        run: bash test.sh ${{ github.workspace }}
