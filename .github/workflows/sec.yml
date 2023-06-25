@@ -38,6 +38,6 @@ jobs:
       - name: Print local var
         run: echo "my last name is $local_var"
       - name: Print Secret value.
-        run: echo ${{ secrets.SEC1 }}
+        run: echo "My phone number is"${{ secrets.SEC1 }}
         
         
