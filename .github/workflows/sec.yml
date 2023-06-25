@@ -22,7 +22,7 @@ jobs:
     needs: stage1
     runs-on: ubuntu-latest
     steps:
-      - name: Show all files from repo
-        run: git ls-files
+      - name: Show files from repo
+        run: ls ${{ github.workspace }}
       - name: Run test.sh
         run: bash test.sh
